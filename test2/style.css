@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #8bc34a;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-weight: 600;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.menu li.active {
+    color: #8bc34a;
+}
+
+.actions {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.lang {
+    border-left: 1px solid #ddd;
+    padding-left: 12px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+.shop {
+    display: flex;
+    gap: 40px;
+}
+
+.sidebar {
+    width: 260px;
+}
+
+.box {
+    border: 1px solid #eee;
+    margin-bottom: 25px;
+}
+
+.box h3 {
+    background: #8bc34a;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.mini-product {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.mini-img {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+}
+
+.products {
+    flex: 1;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.product-img {
+    height: 160px;
+    background: #f0f0f0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.product-img img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-info h4 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #8bc34a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pagination {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.pagination span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 1px solid #8bc34a;
+    margin: 0 5px;
+}
+
+.pagination .active {
+    background: #8bc34a;
+    color: white;
+}
+
+
+
+/* ===== NEWSLETTER ===== */
+.newsletter {
+    background: url('/test2/pic fold/bg-footer8.jpg') center/cover no-repeat;
+    padding: 70px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.newsletter::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.newsletter-content {
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-form input {
+    padding: 12px;
+    width: 320px;
+    border: none;
+}
+
+.newsletter-form button {
+    padding: 12px 22px;
+    background: #8bc34a;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #fff;
+    padding: 50px 0 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+    line-height: 28px;
+}
+
+.footer-logo {
+    color: #8bc34a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 13px;
+    color: #666;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+}
